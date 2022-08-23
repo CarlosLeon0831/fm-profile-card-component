@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 html, body {
     width: 100%;
@@ -13,15 +13,28 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-color: var(--dark-cyan);
-    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-    background-position: top left, bottom right;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 500px;
-
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
+}
+
+h3 {
+    color: var(--very-dark-desat-blue);
+}
+
+hr {
+    position: relative;
+    top: -55px;
+    border: none;
+    color: var(--dark-gray);
+    background-color: var(--dark-gray);
+    height: 1.5px;
+    opacity: 50%;
+}
+
+strong {
+    color: var(--dark-gray-blue);
+    font-weight: 400;
 }
 
 footer {
@@ -30,24 +43,87 @@ footer {
     padding-bottom: 10px;
 }
 
+.top-circle,
+.bottom-circle {
+    position: fixed;
+}
+
+.top-circle {
+    left: -100px;
+    top: -500px;
+    z-index: -1;
+}
+
+.bottom-circle {
+    right: -100px;
+    bottom: -500px;
+    z-index: -1;
+}
+
 .card__container {
     background-color: white;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 420px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card__background img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.user__photo {
+    position: relative;
+    top: -55px;
+    border-radius: 50px;
+    border: 5px solid white;
+}
+
+.username__container {
+    position: relative;
+    top: -60px;
+}
+
+.username__name {
+    margin-bottom: 0;
+}
+
+.username__location {
+    margin-top: 5px;
+    color: var(--dark-gray-blue);
 }
 
 .stats__container {
+    display: grid;
+    position: relative;
+    top: -50px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.stats__number {
+    margin-bottom: 0;
+}
+
+.stats__title {
+    color: var(--dark-gray-blue);
+    font-size: 1rem;
+    margin-top: 0;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  color: white;
+  color: var(--very-dark-desat-blue);
+  
 }
 .attribution a {
-  color: var(--very-dark-desat-blue);
+    color: white;
+  text-decoration: none;font-weight: 700;
 }
 
 :root {
