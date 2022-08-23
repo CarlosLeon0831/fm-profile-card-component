@@ -1,0 +1,60 @@
+* {
+    border: 1px solid red;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 500px;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+.card__container {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+}
+
+.stats__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: var(--very-dark-desat-blue);
+}
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desat-blue: hsl(229, 23%, 23%);
+    --dark-gray-blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
