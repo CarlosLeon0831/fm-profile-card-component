@@ -138,6 +138,34 @@ footer {
   font-weight: 700;
 }
 
+@media screen and (max-width: 375px) {
+  .card__container {
+    width: 330px;
+    height: 400px;
+  }
+  .stats__container {
+    gap: 30px;
+  }
+
+  .top-circle,
+  .bottom-circle {
+    width: 600px;
+    height: 600px;
+  }
+
+  .top-circle {
+    left: -370px;
+    top: -350px;
+    z-index: -1;
+  }
+
+  .bottom-circle {
+    right: -400px;
+    bottom: -280px;
+    z-index: -1;
+  }
+}
+
 :root {
   /* Primary */
   --dark-cyan: hsl(185, 75%, 39%);
